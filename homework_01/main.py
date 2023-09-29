@@ -55,11 +55,13 @@ def filter_numbers(nums_list, flt_type):
         return [num for num in nums_list if num % 2 == 0]
 
     if flt_type == PRIME:
-        result = []
+        return list(filter(is_prime, nums_list))
+'''        result = []
         for num in nums_list:
             if is_prime(num):
                 result.append(num)
         return result
+'''
 
 #print(is_prime(913))
 #print(filter_numbers([0, 1, 913, 6887, 4569, 9279, 1559, 927, 263, 6405, 3413, 6353, 4569, 2151, 4321, 4789, 161, 5501, 5787, 1053, 5147, 6667, 8695, 8435, 4347, 6101, 8911, 2353, 1891, 1705, 6017, 3017, 3639, 3045, 7093, 5959, 9791, 5505, 1489, 655, 9305, 1145], PRIME))
