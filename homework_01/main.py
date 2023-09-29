@@ -21,6 +21,16 @@ ODD = "odd"
 EVEN = "even"
 PRIME = "prime"
 
+def is_prime(num):
+#Просто́е число́ — натуральное число, имеющее ровно два различных натуральных делителя.
+#Другими словами, натуральное число p является простым, если оно отлично от 1 и делится без остатка только на 1 и на само p
+#0 не является натуральным числом
+#1 имеет только один делитель
+    for i in range(2, num - 1):
+        if num % i == 0:
+            return True
+            break
+    return False
 
 def filter_numbers(nums_list, flt_type):
     """
@@ -42,11 +52,7 @@ def filter_numbers(nums_list, flt_type):
     if flt_type == PRIME:
         result = []
         for num in nums_list:
-            count_dif = 0
-            for i in range(2, num-1):
-                if num % i == 0:
-                    count_dif = count_dif+1
-            if count_dif == 0:
+            if is_prime(num):
                 result.append(num)
         return result
 
