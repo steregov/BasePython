@@ -28,11 +28,11 @@ def is_prime(number):
 #1 имеет только один делитель
     if number < 2:
         return False
-    for inc_var in range(2, number):
+    for inc_var in range(2, number+1):
         #print('i=', inc_var)
         if number % inc_var == 0:
             break
-    if inc_var < number-1:
+    if inc_var < number:
         return False
     else:
         return True
@@ -61,5 +61,5 @@ def filter_numbers(nums_list, flt_type):
                 result.append(num)
         return result
 
-#print(is_prime(7))
-print(filter_numbers([0, 1, 913, 6887, 4569, 9279, 1559, 927, 263, 6405, 3413, 6353, 4569, 2151, 4321, 4789, 161, 5501, 5787, 1053, 5147, 6667, 8695, 8435, 4347, 6101, 8911, 2353, 1891, 1705, 6017, 3017, 3639, 3045, 7093, 5959, 9791, 5505, 1489, 655, 9305, 1145], PRIME))
+#print(is_prime(913))
+#print(filter_numbers([0, 1, 913, 6887, 4569, 9279, 1559, 927, 263, 6405, 3413, 6353, 4569, 2151, 4321, 4789, 161, 5501, 5787, 1053, 5147, 6667, 8695, 8435, 4347, 6101, 8911, 2353, 1891, 1705, 6017, 3017, 3639, 3045, 7093, 5959, 9791, 5505, 1489, 655, 9305, 1145], PRIME))
