@@ -21,7 +21,7 @@ class Vehicle(ABC):
             self.fuel = self.fuel-fuel_need
         else:
             raise exceptions.NotEnoughFuel
-
+'''
 Vehicle_1 = Vehicle(1500, False, 10, 7)
 Vehicle_1.fuel = 5
 print(vars(Vehicle_1))
@@ -32,3 +32,4 @@ Vehicle_1.move(105)
 print(vars(Vehicle_1))
 Vehicle_1.move(30)
 print(vars(Vehicle_1))
+'''
