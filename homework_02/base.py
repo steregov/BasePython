@@ -2,9 +2,9 @@ from abc import ABC
 from homework_02 import exceptions
 
 class Vehicle(ABC):
-    def __init__(self, weight=0, started=False, fuel=0, fuel_consumption=0):
+    def __init__(self, weight=0, fuel=0, fuel_consumption=0):
         self.weight = weight
-        self.started = started
+        self.started = False
         self.fuel = fuel
         self.fuel_consumption = fuel_consumption
     pass
