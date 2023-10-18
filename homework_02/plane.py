@@ -16,4 +16,9 @@ class Plane(base.Vehicle):
         else:
             self.cargo = self.cargo + val_cargo
 
+    def remove_all_cargo(self):
+        prev_cargo = self.cargo
+        self.cargo = 0
+        return prev_cargo
+
 #cargo и max_cargo
