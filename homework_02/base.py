@@ -7,7 +7,6 @@ class Vehicle(ABC):
         self.started = False
         self.fuel = fuel
         self.fuel_consumption = fuel_consumption
-    pass
 
     def start(self):
         if not self.started:

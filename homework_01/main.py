@@ -48,6 +48,7 @@ def filter_numbers(nums_list, flt_type):
     >>> filter_numbers([2, 3, 4, 5], EVEN)
     <<< [2, 4]
     """
+
     if flt_type == ODD:
         return [num for num in nums_list if num % 2 != 0]
 
