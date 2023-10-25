@@ -5,7 +5,6 @@
 from homework_02 import base
 from homework_02.engine import Engine
 
-
 class Car(base.Vehicle):
     def __init__(self, weight, fuel, fuel_consumption, engine=None):
         super().__init__(weight, fuel, fuel_consumption)
